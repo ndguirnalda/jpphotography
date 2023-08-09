@@ -99,7 +99,7 @@ img {
 }
 
 .mid-container {
-  background: url("img/photography.jpg");
+  background: url("/img/photography.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -181,6 +181,70 @@ img {
   border: 1px solid #ffffff;
 }
 
+.cportrait {
+  text-decoration: none;
+}
+
+.cportrait:hover {
+  text-decoration: underline;
+}
+
+.sportrait {
+  text-decoration: none;
+}
+
+.sportrait:hover {
+  text-decoration: underline;
+}
+
+.mportraits {
+  text-decoration: none;
+}
+
+.mportraits:hover {
+  text-decoration: underline;
+}
+
+.pphotography {
+  text-decoration: none;
+}
+
+.pphotography:hover {
+  text-decoration: underline;
+}
+
+.pediting {
+  text-decoration: none;
+}
+
+.pediting:hover {
+  text-decoration: underline;
+}
+
+.retouching {
+  text-decoration: none;
+}
+
+.retouching:hover {
+  text-decoration: underline;
+}
+
+.fphotography {
+  text-decoration: none;
+}
+
+.fphotography:hover {
+  text-decoration: underline;
+}
+
+.vediting {
+  text-decoration: none;
+}
+
+.vediting:hover {
+  text-decoration: underline;
+}
+
 .mid3-container {
   /* background-color: #001e53; */
   /* position: relative; */
@@ -201,6 +265,7 @@ img {
 }
 
 .bot-container {
+  z-index: -1;
   background-color: #022430;
   padding: 40px 20px 20px 20px;
 }
@@ -238,9 +303,12 @@ img {
   /* padding: 5px auto 5px; */
   margin: 20px;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .c2 {
@@ -294,7 +362,7 @@ img {
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 50px 50px 50px 0px;
 }
 
 #myBtn:hover {
@@ -351,4 +419,30 @@ img {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.c--anim-btn span {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.c--anim-btn,
+.c-anim-btn {
+  transition: 0.3s;
+}
+
+.c--anim-btn {
+  height: 64px;
+  font: normal normal 700 1.2em/4em Arial, sans-serif;
+  overflow: hidden;
+  width: 200px;
+}
+
+.c-anim-btn {
+  margin-top: 0em;
+}
+
+.c--anim-btn:hover .c-anim-btn {
+  margin-top: -4em;
 }
